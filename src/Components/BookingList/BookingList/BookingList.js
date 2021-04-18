@@ -8,7 +8,10 @@ const BookingList = () => {
   const [loginUser, setLoginUser] = useContext(UserContext);
   console.log("orderBookingList", orderBookingList);
   useEffect(() => {
-    fetch("http://localhost:10000/clientOrder?email=" + loginUser.email)
+    fetch(
+      "https://warm-beach-20852.herokuapp.com/clientOrder?email=" +
+        loginUser.email
+    )
       .then((res) => res.json())
       .then((data) => {
         setOrderBookingList(data);

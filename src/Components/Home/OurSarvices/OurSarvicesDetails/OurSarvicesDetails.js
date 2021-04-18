@@ -14,7 +14,7 @@ const OurSarvicesDetails = ({ srvsData }) => {
   //   delete datas._id;
   //   console.log(datas);
 
-  //   fetch("http://localhost:10000/addOrderProducts", {
+  //   fetch("https://warm-beach-20852.herokuapp.com/addOrderProducts", {
   //     method: "POST",
   //     body: JSON.stringify(datas),
   //     headers: {
@@ -33,7 +33,7 @@ const OurSarvicesDetails = ({ srvsData }) => {
         </p>
         <img
           // src={`data:image/png;base64,${srvsData.image.img}`}
-          // src={`http://localhost:10000/${srvsData.img}`}
+          // src={`https://warm-beach-20852.herokuapp.com/${srvsData.img}`}
           src={srvsData.image}
           alt=""
           style={{ width: "100%" }}

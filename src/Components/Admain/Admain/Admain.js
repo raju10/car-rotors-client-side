@@ -9,7 +9,7 @@ const Admain = () => {
   //////====================/////////
   const [prddetls, setPrdDetls] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:10000/ourProduct")
+    fetch("https://warm-beach-20852.herokuapp.com/ourProduct")
       .then((res) => res.json())
       .then((data) => {
         setPrdDetls(data);
@@ -17,7 +17,7 @@ const Admain = () => {
   }, []);
   ///////====================/////////
   useEffect(() => {
-    fetch("http://localhost:10000/isAdmain", {
+    fetch("https://warm-beach-20852.herokuapp.com/isAdmain", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loginUser.email }),

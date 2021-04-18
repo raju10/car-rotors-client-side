@@ -22,7 +22,7 @@ const OrderBooking = () => {
     //   data,
     // };
     // console.log(datas);
-    // fetch("http://localhost:10000/addClientOrder", {
+    // fetch("https://warm-beach-20852.herokuapp.com/addClientOrder", {
     //   method: "POST",
     //   body: JSON.stringify(datas),
     //   headers: {
@@ -42,7 +42,7 @@ const OrderBooking = () => {
       paymentId,
     };
     console.log(datas);
-    fetch("http://localhost:10000/addClientOrder", {
+    fetch("https://warm-beach-20852.herokuapp.com/addClientOrder", {
       method: "POST",
       body: JSON.stringify(datas),
       headers: {

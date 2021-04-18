@@ -8,14 +8,17 @@ const AllOrderList = () => {
   const [orderBookingList, setOrderBookingList] = useState([]);
   const [loginUser, setLoginUser] = useContext(UserContext);
   useEffect(() => {
-    fetch("http://localhost:10000/clientOrder?email=" + loginUser.email)
+    fetch(
+      "https://warm-beach-20852.herokuapp.com/clientOrder?email=" +
+        loginUser.email
+    )
       .then((res) => res.json())
       .then((data) => {
         setOrderBookingList(data);
       });
   }, []);
   ///////
-  fetch("http://localhost:10000/addAllOrder", {
+  fetch("https://warm-beach-20852.herokuapp.com/addAllOrder", {
     method: "POST",
     body: JSON.stringify(orderBookingList),
     headers: {
@@ -26,7 +29,7 @@ const AllOrderList = () => {
     .then((json) => console.log(json));
   //////
   useEffect(() => {
-    fetch("http://localhost:10000/AllOrder")
+    fetch("https://warm-beach-20852.herokuapp.com/AllOrder")
       .then((res) => res.json())
       .then((data) => {
         setAllOrderList(data);

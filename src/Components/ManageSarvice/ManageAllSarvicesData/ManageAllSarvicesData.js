@@ -1,6 +1,21 @@
 import React from "react";
 
 const ManageAllSarvicesData = ({ allSarvices }) => {
+  const hendelPrdDeleted = (id) => {
+    console.log("pd", id);
+    if (id) {
+      fetch(`/delete/${id}`, {
+        method: "DELETE",
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("deleted successfully", data);
+        });
+    }
+  };
   return (
     <table className="table table-borderless">
       <thead>
@@ -41,6 +56,14 @@ const ManageAllSarvicesData = ({ allSarvices }) => {
             <td>{sarvice.price}</td>
 
             <td>{sarvice.email}</td>
+            <td>
+              <button
+                onClick={() => hendelPrdDeleted(sarvice._id)}
+                className="btn btn-danger"
+              >
+                Deleted
+              </button>
+            </td>
           </tr>
         ))}
       </tbody>

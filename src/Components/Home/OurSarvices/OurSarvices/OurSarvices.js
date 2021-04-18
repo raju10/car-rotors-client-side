@@ -25,7 +25,7 @@ const servicesDatas = [
 const OurSarvices = () => {
   const [servicesData, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:10000/ourProduct")
+    fetch("https://warm-beach-20852.herokuapp.com/ourProduct")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

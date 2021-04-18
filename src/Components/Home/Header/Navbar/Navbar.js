@@ -9,7 +9,7 @@ const Navbar = () => {
   // const [clientOrdersDetls, setClientOrdersDetls] = useState([]);
   // console.log("clientOrdersDetls", clientOrdersDetls);
   // useEffect(() => {
-  //   fetch("http://localhost:10000/ourProduct")
+  //   fetch("https://warm-beach-20852.herokuapp.com/ourProduct")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setPrdDetls(data);
@@ -17,8 +17,8 @@ const Navbar = () => {
   // }, []);
   // //////////
   // useEffect(() => {
-  //   // fetch("http://localhost:10000/clientOrder?email=" + loginUser.email)
-  //   fetch("http://localhost:10000/AllOrder")
+  //   // fetch("https://warm-beach-20852.herokuapp.com/clientOrder?email=" + loginUser.email)
+  //   fetch("https://warm-beach-20852.herokuapp.com/AllOrder")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setClientOrdersDetls(data);

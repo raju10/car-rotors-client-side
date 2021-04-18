@@ -5,7 +5,7 @@ import ManageAllSarvicesData from "../ManageAllSarvicesData/ManageAllSarvicesDat
 const ManageSarvice = () => {
   const [allSarvices, setAllSarvices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:10000/ourProduct")
+    fetch("https://warm-beach-20852.herokuapp.com/ourProduct")
       .then((res) => res.json())
       .then((data) => {
         setAllSarvices(data);

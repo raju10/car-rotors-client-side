@@ -5,19 +5,7 @@ import { UserContext, userOrderContext } from "../../../App";
 const YourPlacedOrder = () => {
   const [selcOrder, setSelcOrder] = useContext(userOrderContext);
 
-  const handelBuyNow = () => {
-    // const datas = { ...selcOrder };
-    // console.log(datas);
-    // fetch("https://warm-beach-20852.herokuapp.com/addClientOrder", {
-    //   method: "POST",
-    //   body: JSON.stringify(datas),
-    //   headers: {
-    //     "Content-type": "application/json; charset=UTF-8",
-    //   },
-    // })
-    //   .then((response) => response.json())
-    //   .then((json) => console.log(json));
-  };
+  const handelBuyNow = () => {};
   return (
     <div>
       <div>

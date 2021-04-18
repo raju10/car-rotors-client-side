@@ -7,10 +7,7 @@ import {
   CardExpiryElement,
 } from "@stripe/react-stripe-js";
 
-// import useResponsiveFontSize from "../../useResponsiveFontSize";
-
 const useOptions = () => {
-  //   const fontSize = useResponsiveFontSize();
   const options = useMemo(
     () => ({
       style: {

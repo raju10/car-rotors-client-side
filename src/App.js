@@ -25,7 +25,6 @@ function App() {
   return (
     <userOrderContext.Provider value={[selcOrder, setSelcOrder]}>
       <UserContext.Provider value={[loginUser, setLoginUser]}>
-        <h3>email : {loginUser.email}</h3>
         <Router>
           <Switch>
             <Route path="/home">

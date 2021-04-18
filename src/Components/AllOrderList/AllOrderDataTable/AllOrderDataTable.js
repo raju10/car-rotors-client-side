@@ -11,15 +11,14 @@ const AllOrderDataTable = ({ allOrderList }) => {
           <th className="text-secondary" scope="col">
             Name
           </th>
-          {/* <th className="text-secondary" scope="col">Gender</th>
-                  <th className="text-secondary" scope="col">Age</th> */}
+
           <th className="text-secondary" scope="col">
             Order Name
           </th>
           <th className="text-secondary" scope="col">
             Order Price
           </th>
-          {/* <th className="text-secondary" scope="col">Phone</th> */}
+
           <th className="text-secondary" scope="col">
             Email
           </th>

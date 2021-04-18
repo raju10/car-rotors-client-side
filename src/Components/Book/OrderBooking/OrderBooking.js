@@ -15,22 +15,6 @@ const OrderBooking = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    // const datas = {
-    //   ...selcOrder,
-    //   ...loginUser,
-    //   date: new Date().toDateString(),
-    //   data,
-    // };
-    // console.log(datas);
-    // fetch("https://warm-beach-20852.herokuapp.com/addClientOrder", {
-    //   method: "POST",
-    //   body: JSON.stringify(datas),
-    //   headers: {
-    //     "Content-type": "application/json; charset=UTF-8",
-    //   },
-    // })
-    //   .then((response) => response.json())
-    //   .then((json) => console.log(json));
     setOrderData(data);
   };
   const handelpaymentSuccess = (paymentId) => {
@@ -56,8 +40,6 @@ const OrderBooking = () => {
     <div>
       <div style={{ display: data ? "none" : "block" }}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {/* <input defaultValue="test" {...register("example")} /> */}
-
           <input
             {...register("clientName", { required: true })}
             defaultValue={loginUser.name}

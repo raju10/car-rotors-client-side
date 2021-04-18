@@ -26,8 +26,7 @@ const ManageAllSarvicesData = ({ allSarvices }) => {
           <th className="text-secondary" scope="col">
             img
           </th>
-          {/* <th className="text-secondary" scope="col">Gender</th>
-                      <th className="text-secondary" scope="col">Age</th> */}
+
           <th className="text-secondary" scope="col">
             Product Name
           </th>
